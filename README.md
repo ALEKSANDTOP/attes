@@ -14,3 +14,10 @@ string [] GenArray (int size)
     }
     return array;
 }
+void ConcArray(string [] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write( array[i] + " " );
+    }
+}
