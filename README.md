@@ -35,3 +35,8 @@ string [] SortingArray (string [] array, int size)
     }
     return sortArray;
 }
+Console.WriteLine("Введите размер массива: ");
+int size = Convert.ToInt32(Console.ReadLine());
+string [] strArray = GenArray(size);
+string [] array = SortingArray(strArray, size);
+ConcArray(array);
