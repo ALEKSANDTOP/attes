@@ -21,3 +21,17 @@ void ConcArray(string [] array)
         Console.Write( array[i] + " " );
     }
 }
+string [] SortingArray (string [] array, int size)
+{
+    string [] sortArray = new string [size];
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if(array[i].Length <= 3 )
+        {
+              sortArray[j] = array[i];
+              j++;
+        }
+    }
+    return sortArray;
+}
